@@ -31,7 +31,7 @@
     transform: scale(1.07);
 }
 
-.main-slider-one .image-layer::before {
+/* .main-slider-one .image-layer::before {
     position: absolute;
     top: 0;
     left: 0;
@@ -40,7 +40,7 @@
     background: rgba(var(--thm-black-rgb), 0.6);
     content: "";
     z-index: -1;
-}
+} */
 
 .main-slider-one .shape1 {
     position: absolute;
@@ -68,7 +68,7 @@
 .main-slider-one__single {
     position: relative;
     display: block;
-    padding: 388px 0px 53px;
+    padding: 300px 0px 53px;
     z-index: 1;
 }
 
