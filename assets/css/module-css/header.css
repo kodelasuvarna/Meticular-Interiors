@@ -605,6 +605,7 @@
 
 .main-header-one__left .logo-box a img {
     width: 120px;
+    padding:5px;
 }
 
 .main-header-one__middle {
