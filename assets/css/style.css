@@ -46,7 +46,8 @@
 ===============================*/
 :root {
     --thm-font: 'DM Sans', sans-serif;
-    --thm-primary: #e90b35;
+    /* --thm-primary: #e90b35; */
+    --thm-primary: #d6ba78;
     --thm-primary-rgb: 233, 11, 53;
     --thm-white: #ffffff;
     --thm-white-rgb: 255, 255, 255;
