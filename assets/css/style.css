@@ -47,7 +47,7 @@
 :root {
     --thm-font: 'DM Sans', sans-serif;
     /* --thm-primary: #e90b35; */
-    --thm-primary: #d6ba78;
+    --thm-primary: #DAA520;
     --thm-primary-rgb: 233, 11, 53;
     --thm-white: #ffffff;
     --thm-white-rgb: 255, 255, 255;
@@ -347,6 +347,7 @@ h6 {
     opacity: 1;
     transform: scaleX(1);
     transition-duration: 800ms;
+    /* background: rgba(4, 23, 26, 0.4); */
     background-color: var(--thm-primary);
     z-index: -1;
 }
@@ -925,7 +926,7 @@ label {
     line-height: 50px;
     position: fixed;
     bottom: -10%;
-    right: 50px;
+    right: 12px;
     font-size: var(--thm-body-font-size);
     border-radius: 6px;
     z-index: 99;
@@ -5619,4 +5620,34 @@ Project Four Css
     position: relative;
     display: block;
     padding-top: 0px;
+}
+.show-color{
+    color:#DAA520;
+}
+.whatsapp{
+  position: fixed;
+  right: 12px;
+  bottom:6rem;  
+  cursor: pointer;
+display: grid;
+place-items: center;
+  border-radius: 50px;
+  z-index: 10000;
+  opacity: 1;
+ 
+  background: rgb(37, 211, 102);
+}
+.whatsapp a{
+  padding: 0.3rem 0.5rem;
+}
+.whatsapp a i{
+ 
+  color: white !important;
+}
+.whatsapp:hover a i{
+
+color: var(--white-color) !important;
+}
+.whatsapp a i{
+  font-size: 2.5rem;
 }

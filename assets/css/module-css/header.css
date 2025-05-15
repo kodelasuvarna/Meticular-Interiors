@@ -283,7 +283,7 @@
     font-size: 30px;
     cursor: pointer;
     line-height: 1;
-    color: var(--thm-white);
+    color: var(--thm-primary);
     display: none;
     padding: 34px 0 35px;
     transition: all 200ms linear;
@@ -446,7 +446,7 @@
     font-weight: 500;
     text-transform: capitalize;
     font-family: var(--thm-font);
-    padding: 43.5px 0px 42.5px;
+    /* padding: 43.5px 0px 42.5px; */
     z-index: 1;
 }
 
