@@ -5757,7 +5757,7 @@ color: var(--white-color) !important;
 
 .image-grid img {
   width: 100%;
-  height: auto;
+  height: 100%;
   border-radius: 12px;
   object-fit: cover;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -5772,3 +5772,36 @@ color: var(--white-color) !important;
 .img-box1 img{
      filter: grayscale(100%);
 }
+.section-bg {
+      background-color: white; /* Match your greenish background */
+      
+      padding: 60px 0;
+    }
+
+    .carousel-inner img {
+      border-radius: 20px;
+    }
+
+    .content-block h2 {
+      color: #e4a045;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .content-block p {
+      color: var(--thm-gray);
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .carousel-indicators [data-bs-target] {
+      background-color: #e4a045;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+
+    }
+
+    .carousel-indicators .active {
+      background-color: #fff;
+    }
