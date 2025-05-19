@@ -28,7 +28,7 @@
 .service-one__single {
     position: relative;
     display: block;
-    padding: 52px 60px 50px;
+    padding:15px 20px;
     margin-bottom: 30px;
     overflow: hidden;
     z-index: 1;
@@ -88,7 +88,8 @@
 .service-one__single-inner {
     position: relative;
     display: block;
-    padding-left: 100px;
+    /* padding-left: 100px; */
+  text-align: center;
     z-index: 5;
 }
 
@@ -108,9 +109,15 @@
 }
 
 .service-one__single-inner .icon-box {
-    position: absolute;
-    top: 8px;
+    position: relative;
+    /* top: 8px; */
     left: 0;
+}
+.service-one__single-inner .icon-box img{
+    border-radius: 5px;
+    width:100%;
+    height:160px;
+    object-fit: cover;
 }
 
 .service-one__single-inner .icon-box span {
@@ -140,7 +147,8 @@
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: -0.02em;
-    margin-bottom: 18px;
+    margin: 10px 0px;
+
 }
 
 .service-one__single-inner .content-box h2 a {

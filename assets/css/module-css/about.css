@@ -248,11 +248,12 @@
 .about-one__content-bottom-author-box .author-info .img-box {
     position: relative;
     display: block;
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     border: 1px solid var(--thm-black);
     overflow: hidden;
+    background-color:var(--thm-black);
 }
 
 .about-one__content-bottom-author-box .author-info .img-box img {

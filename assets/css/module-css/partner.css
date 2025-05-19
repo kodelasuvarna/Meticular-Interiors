@@ -7,7 +7,7 @@ Brand One
     position: relative;
     display: block;
     background: var(--thm-white);
-    padding: 120px 0 0px;
+    padding: 80px 0 80px;
     overflow: hidden;
     z-index: 1;
 }
@@ -42,8 +42,12 @@ Brand One
 }
 
 .brand-one .swiper-slide .img-box img {
+    /* opacity: 0.4;
+    width: auto; */
+    height: auto;
     opacity: 0.4;
-    width: auto;
+    width: 150px;
+    object-fit: contain;
 }
 
 .brand-one .swiper-slide .img-box2 {

@@ -249,10 +249,12 @@ Testimonials Two Css
 .testimonials-two__single-top .img-box {
     position: relative;
     display: block;
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     overflow: hidden;
+    background-color: var(--thm-primary);
+    border: 1px solid burlywood;
 }
 
 .testimonials-two__single-top .img-box img {

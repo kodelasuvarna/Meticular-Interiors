@@ -22,7 +22,7 @@
 .footer-main {
     position: relative;
     display: block;
-    padding: 120px 0px 110px;
+    padding: 80px 0px 100px;
     overflow: hidden;
     z-index: 1;
 }
@@ -39,12 +39,15 @@
 }
 
 .single-footer-widget .title h2 {
-    color: var(--thm-white);
+    color: var(--thm-primary);
     font-size: 26px;
     line-height: 36px;
     font-weight: 700;
     text-transform: capitalize;
     letter-spacing: -0.016em;
+}
+.single-footer-widget .title h2:hover{
+    color: var(--thm-white);
 }
 
 .footer-widget__about {
@@ -98,27 +101,37 @@
     display: flex;
     align-items: center;
     margin-top: 11px;
+
+      
+     
+     
+    
+      
 }
 
 .footer-social-link a {
-    position: relative;
-    display: block;
-    color: #abafb5;
-    font-size: 16px;
-    line-height: 30px;
-    font-weight: 500;
-    text-transform: uppercase;
-}
+   width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: var(--thm-primary);
+    font-size: 20px;
+    color: var(--thm-white);
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;}
 
 .footer-social-link a::before {
     position: absolute;
     left: 0;
-    bottom: 6px;
+    
     right: 0;
-    height: 1px;
-    background: var(--thm-white);
-    transform: scaleX(0.8) rotateX(0deg);
-    transition: all 0.4s linear;
+    
+   
     opacity: 0;
     content: "";
 }
@@ -127,6 +140,7 @@
     transform: scaleX(1.0) rotateX(0deg);
     transition: all 0.4s linear;
     opacity: 1;
+    text-decoration: none !important;
 }
 
 .footer-social-link a:hover {
@@ -199,7 +213,7 @@
 }
 
 .footer-widget__links-box ul li a:hover::before {
-    transform: scale(1.0);
+    
     opacity: 1;
 }
 

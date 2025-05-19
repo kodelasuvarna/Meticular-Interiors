@@ -125,7 +125,8 @@
 .blog-one__single-content {
     position: relative;
     display: block;
-    padding: 16px 0px 0px;
+    padding: 16px 10px ;
+    background-color: rgb(223, 207, 186);
 }
 
 .blog-one__single-content .meta-info {

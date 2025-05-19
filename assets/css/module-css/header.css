@@ -373,7 +373,7 @@
 }
 
 .sticky-menu .navbar-wrap ul li a {
-    padding: 35px 0;
+    padding: 10px 0;
 }
 
 
@@ -850,10 +850,12 @@
 .main-header-four__bottom {
     position: relative;
     display: block;
+    background-color: #011C39;
+    
 }
 
 .main-header-one.style4 .navbar-wrap ul li a {
-    color: var(--thm-black);
+    color: var(--thm-white);
 }
 
 .main-header-one.style4 .navbar-wrap>ul>li.active>a,
@@ -883,6 +885,7 @@
 
 .main-header-one.style4 .sticky-menu {
     background: #ffffff;
+    color:black
 }
 
 .main-header-one.style4 .sticky-menu .main-header-four__top {

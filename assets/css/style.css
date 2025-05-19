@@ -302,8 +302,8 @@ h6 {
 
 .sec-title h2 {
     color: var(--thm-black);
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 40px;
+    line-height: 40px;
     font-weight: 700;
     text-transform: none;
     letter-spacing: -0.04em;
@@ -570,7 +570,7 @@ label {
     position: static;
     max-width: 1320px;
     width: 100%;
-    padding: 0px 15px;
+    padding: 15px 20px;
     margin: 0 auto;
 }
 
@@ -1526,7 +1526,7 @@ Feauture Three
     position: relative;
     display: block;
     background: var(--thm-white);
-    padding: 120px 0px 120px;
+    padding: 120px 0px 80px;
     z-index: 1;
 }
 
@@ -1554,10 +1554,10 @@ Feauture Three
 
 .feauture-three__img .inner img {
     position: relative;
-    max-width: none;
+    max-width: 100%;
     float: right;
-    border-radius: 30px;
-    border: 13px solid var(--thm-black);
+    border-radius: 10px;
+    /* border: 1px solid var(--thm-black); */
 }
 
 .feauture-three__content {
@@ -1595,7 +1595,7 @@ Video One
     position: relative;
     display: block;
     padding: 250px 0px 0px;
-    background: var(--thm-black);
+    background: #a68d4f;
     z-index: 1;
 }
 
@@ -1659,9 +1659,9 @@ Video One
 
 .video-one__inner .title-box h2 {
     color: var(--thm-white);
-    font-size: 80px;
+    font-size: 70px;
     line-height: 1em;
-    font-weight: 700;
+    font-weight: 600;
     letter-spacing: -0.02em;
 }
 
@@ -1874,7 +1874,7 @@ Faq One
 .faq-one {
     position: relative;
     display: block;
-    background: var(--thm-gray-bg);
+    background: #494952;
     padding: 120px 0px 250px;
     overflow: hidden;
     z-index: 1;
@@ -1904,7 +1904,7 @@ Faq One
 }
 
 .faq-one__inner .big-title h2 {
-    color: #eaeaea;
+    color: #daa52038;
     font-size: 200px;
     line-height: 0.9em;
     font-weight: 700;
@@ -2293,6 +2293,7 @@ Why Choose Us One
     align-items: center;
     justify-content: center;
     z-index: 5;
+    background-color: rgba(0, 0, 0, .2);
 }
 
 .why-choose-us-one__img ul {
@@ -2865,7 +2866,7 @@ Scrolling Text One Css
 
 .scrolling-text-one__title h2 {
     position: relative;
-    color: transparent;
+    color: rgba(0, 0, 0, 0.05);
     -webkit-text-stroke: 1px rgba(var(--thm-white-rgb), 0.4);
     font-size: 100px;
     line-height: 1.1em;
@@ -2891,8 +2892,7 @@ Feauture Four Css
 .feauture-two.style4 {
     position: relative;
     display: block;
-    margin-top: 0;
-    margin-bottom: 0;
+    margin: 20px 0px;
 }
 
 /*=============================
@@ -5650,4 +5650,125 @@ color: var(--white-color) !important;
 }
 .whatsapp a i{
   font-size: 2.5rem;
+}
+
+        .iconGridBox{
+            background-color: black;
+            padding: 10px 20px;
+        }
+         .iconInnerWrap {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+            align-items: center;
+         }
+
+         .sizess {
+            font-size: 16px;
+         }
+
+         .icnBx {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            /* Set the width for the circle */
+            height: 40px;
+            /* Set the height for the circle */
+            border-radius: 50%;
+            /* Makes the div circular */
+            /* background-color:var(--thm-primary); */
+            /* Background color for the circle */
+            margin: 0 auto;
+            /* Center the icon box */
+            transition: background-color 0.3s;
+            /* Smooth transition */
+         }
+
+         .icnBx i {
+            font-size: 30px;
+            /* Adjust icon size */
+            color: var(--thm-primary);
+            /* Change icon color */
+         }
+
+         .icnBx:hover {
+
+            color: white;
+            /* Change icon color */
+         }
+
+         .icnBx i:hover {
+            font-size: 25px;
+            /* Adjust icon size */
+            color: blac;
+            /* Change icon color */
+         }
+         .about-head{
+            color:var(--thm-primary)
+         }
+         /*services carousal start*/
+         .custom-carousel-section {
+  padding: 40px 0;
+  background-color: #f9f9f9;
+}
+
+.custom-swiper {
+  width: 90%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.custom-swiper .swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-swiper .swiper-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.custom-nav {
+  color: #d4a018;
+}
+
+.custom-pagination .swiper-pagination-bullet {
+  background-color: #d4a018;
+}
+ .gallerygon-heading {
+            color:var(--thm-primary);
+            font-size: 2rem;
+         }
+         .heads{
+             color:var(--thm-primary);
+            font-size: 1.5rem; 
+         }
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Force 3 columns */
+  gap: 20px;
+}
+
+.image-grid img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Optional: Handle very small screens if needed */
+@media (max-width: 600px) {
+  .image-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.img-box1 img{
+     filter: grayscale(100%);
 }
