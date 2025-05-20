@@ -5661,6 +5661,7 @@ color: var(--white-color) !important;
             gap: 10px;
             flex-direction: column;
             align-items: center;
+            /* padding: 10px; */
          }
 
          .sizess {
