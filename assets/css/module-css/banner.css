@@ -86,7 +86,7 @@
 }
 
 .main-slider-one__content h3 {
-    color: var(--thm-white);
+    color: var(--thm-primary);
     font-size: 60px;
     line-height: 1em;
     font-weight: 700;
@@ -110,7 +110,7 @@
 }
 
 .main-slider-one__content h2 {
-    color: var(--thm-primary);
+    color: var(--thm-white);
     font-size: 90px;
     line-height: 1em;
     font-weight: 700;
