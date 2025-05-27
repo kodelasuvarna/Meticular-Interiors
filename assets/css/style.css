@@ -78,7 +78,7 @@ body {
     font-weight: var(--thm-font-weight);
     font-size: var(--thm-font-size);
     line-height: 30px;
-    color: var(--thm-gray);
+    /* color: var(--thm-gray); */
     font-style: normal;
 }
 
@@ -1336,7 +1336,7 @@ label {
     display: block;
     width: 40px;
     height: 40px;
-    background: var(--thm-white);
+    background: var(--thm-prima);
     border-radius: 50%;
     color: var(--thm-black);
     font-size: 14px;
@@ -5654,14 +5654,14 @@ color: var(--white-color) !important;
 
         .iconGridBox{
             background-color: black;
-            padding: 10px 20px;
+            padding: 30px 20px;
         }
          .iconInnerWrap {
             display: flex;
-            gap: 10px;
+            gap: 5px;
             flex-direction: column;
             align-items: center;
-            /* padding: 10px; */
+            
          }
 
          .sizess {
@@ -5673,37 +5673,30 @@ color: var(--white-color) !important;
             align-items: center;
             justify-content: center;
             width: 40px;
-            /* Set the width for the circle */
             height: 40px;
-            /* Set the height for the circle */
+            
             border-radius: 50%;
-            /* Makes the div circular */
-            /* background-color:var(--thm-primary); */
-            /* Background color for the circle */
             margin: 0 auto;
-            /* Center the icon box */
             transition: background-color 0.3s;
-            /* Smooth transition */
+           
          }
 
          .icnBx i {
             font-size: 30px;
-            /* Adjust icon size */
             color: var(--thm-primary);
-            /* Change icon color */
+           
          }
 
          .icnBx:hover {
 
             color: white;
-            /* Change icon color */
+           
          }
 
          .icnBx i:hover {
             font-size: 25px;
-            /* Adjust icon size */
             color: blac;
-            /* Change icon color */
+            
          }
          .about-head{
             color:var(--thm-primary)
@@ -5754,6 +5747,7 @@ color: var(--white-color) !important;
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* Force 3 columns */
   gap: 20px;
+  
 }
 
 .image-grid img {
@@ -5806,3 +5800,58 @@ color: var(--white-color) !important;
     .carousel-indicators .active {
       background-color: #fff;
     }
+
+    .features-section {
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.section-heading {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.feature {
+  flex: 1 1 calc(33.333% - 30px);
+  background-color: #fff;
+  border-radius: 8px;
+  text-align: center;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 5px;
+}
+
+.feature img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 15px;
+}
+
+.feature h3 {
+  font-size: 18px;
+  color:gold;
+  margin-bottom: 10px;
+}
+
+.feature p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .feature {
+    flex: 1 1 100%;
+  }
+}
