@@ -333,20 +333,73 @@
                     </div>
 
                     <!-- Brochure -->
-                   <div class="sidebar__single sidebar__support">
-                        <div class="sidebar__support-bg" style="background-image: url(assets/img/project/project-4.jpg);"></div>
-                        <div class="sidebar__support__inner text-center">
-                            <h2>Looking for Our <br>Company Profile or <br>Brochure?</h2>
-                            <p style="color: #fff; margin-bottom: 15px;">
-                                Get to know more about our services and portfolio by downloading our brochure.
-                            </p>
-                            <div class="btn-box">
-                                <a class="thm-btn" href="assets/brochure.pdf" download>
-                                    <span class="txt">DOWNLOAD BROCHURE</span>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                 <div class="sidebar__single sidebar__support">
+  <div class="sidebar__support-bg" style="background-image: url(assets/img/project/project-4.jpg);"></div>
+  <div class="sidebar__support__inner text-center">
+    <h2>Looking for Our <br>Company Profile or <br>Brochure?</h2>
+    <p style="color: #fff; margin-bottom: 20px;">
+      Fill out the form below to download our brochure and learn more about our services.
+    </p>
+
+    <!-- Professional Form -->
+    <form id="brochureForm" oninput="validateForm()" style="margin-bottom: 20px;">
+      <input 
+        type="text" 
+        id="name" 
+        placeholder="Your Name" 
+        required 
+        style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" 
+      />
+      <input 
+        type="email" 
+        id="email" 
+        placeholder="Your Email" 
+        required 
+        style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" 
+      />
+      <input 
+        type="tel" 
+        id="mobile" 
+        placeholder="Your Mobile Number" 
+        required 
+        style="width: 85%; padding: 10px; margin-bottom: 10px; border: none; border-radius: 5px;" 
+      />
+    </form>
+
+    <!-- Download button -->
+    <div class="btn-box">
+      <a id="downloadBtn" class="thm-btn" href="./assets/brochure/Company Profile Presentation.pdf" download="Company-Brochure.pdf">
+  <span class="txt">DOWNLOAD BROCHURE</span>
+</a>
+    </div>
+  </div>
+</div>
+<script>
+  function validateForm() {
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const mobile = document.getElementById("mobile").value.trim();
+    const downloadBtn = document.getElementById("downloadBtn");
+
+    // Updated patterns
+    const emailPattern = /^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+    const mobilePattern = /^\d{10}$/;
+
+    if (name !== "" && emailPattern.test(email) && mobilePattern.test(mobile)) {
+      downloadBtn.href = "assets/brochure/Dm proposal";
+      downloadBtn.setAttribute("download", "brochure.pdf");
+      downloadBtn.style.pointerEvents = "auto";
+      downloadBtn.style.opacity = "1";
+      downloadBtn.onclick = null;
+    } else {
+      downloadBtn.href = "#";
+      downloadBtn.removeAttribute("download");
+      downloadBtn.style.pointerEvents = "none";
+      downloadBtn.style.opacity = "0.6";
+      downloadBtn.onclick = () => false;
+    }
+  }
+</script>
 
                 </div>
             </div>
