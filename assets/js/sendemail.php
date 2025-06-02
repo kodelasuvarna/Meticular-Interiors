@@ -1,32 +1,38 @@
 <?php
-if ($_SERVER["REQUEST_METHOD"] === "POST") {
-    $to = "hello@homezointeriors.com";
-    $subject = "New Contact Form Submission – Homezo Interiors";
+use PHPMailer\PHPMailer\PHPMailer;
+use PHPMailer\PHPMailer\Exception;
 
-    $name = htmlspecialchars($_POST["name"]);
-    $email = htmlspecialchars($_POST["email"]);
-    $phone = htmlspecialchars($_POST["phone"]);
-    $subj = htmlspecialchars($_POST["subject"]);
-    $message = htmlspecialchars($_POST["message"]);
+require 'PHPMailer/src/Exception.php';
+require 'PHPMailer/src/PHPMailer.php';
+require 'PHPMailer/src/SMTP.php';
 
-    $headers = "From: $email\r\n";
-    $headers .= "Reply-To: $email\r\n";
-    $headers .= "Content-Type: text/plain; charset=UTF-8\r\n";
+$mail = new PHPMailer(true);
 
-    $body = "You have a new message from the Homezo Interiors website:\n\n";
-    $body .= "Name: $name\n";
-    $body .= "Email: $email\n";
-    $body .= "Phone: $phone\n";
-    $body .= "Subject: $subj\n\n";
-    $body .= "Message:\n$message\n";
+try {
+    // Server settings
+    $mail->isSMTP();
+    $mail->Host = 'smtp.gmail.com';
+    $mail->SMTPAuth = true;
+    $mail->Username = 'hello@homezointeriors.com'; // Your Gmail
+    $mail->Password = 'your_app_password';   // Gmail App Password
+    $mail->SMTPSecure = 'tls';
+    $mail->Port = 587;
 
-    if (mail($to, $subject, $body, $headers)) {
-        echo "Email sent successfully.";
-    } else {
-        echo "Email sending failed.";
-    }
-} else {
-    http_response_code(403);
-    echo "Forbidden request method.";
+    // Recipients
+    $mail->setFrom('hello@homezointeriors.com', 'Homezo Website');
+    $mail->addAddress('hello@homezointeriors.com'); // where you want to receive the test mail
+
+    // Content
+    $mail->isHTML(false);
+    $mail->Subject = $_POST["subject"];
+    $mail->Body    = "Name: " . $_POST["name"] . "\n"
+                   . "Email: " . $_POST["email"] . "\n"
+                   . "Phone: " . $_POST["phone"] . "\n"
+                   . "Message:\n" . $_POST["message"];
+
+    $mail->send();
+    echo 'Message sent';
+} catch (Exception $e) {
+    echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
 }
 ?>
