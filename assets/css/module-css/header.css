@@ -445,8 +445,7 @@
     line-height: 24px;
     font-weight: 500;
     text-transform: capitalize;
-    font-family: var(--thm-font);
-    /* padding: 43.5px 0px 42.5px; */
+    font-family: Helvetica;
     z-index: 1;
 }
 
@@ -850,7 +849,7 @@
 .main-header-four__bottom {
     position: relative;
     display: block;
-    background-color: #011C39;
+    background-color:black;
     
 }
 

@@ -88,6 +88,7 @@ p {
     line-height: 30px;
     color: var(--thm-gray);
     margin-bottom: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 
@@ -172,6 +173,8 @@ h6 {
     line-height: 1.2em;
     font-weight: var(--thm-heading-font-weight);
     text-transform: inherit;
+     font-family: Helvetica;
+
 }
 
 h1 a,
@@ -307,6 +310,7 @@ h6 {
     font-weight: 700;
     text-transform: none;
     letter-spacing: -0.04em;
+    font-family: Helvetica;
 }
 
 
@@ -1957,6 +1961,7 @@ Faq One
     line-height: 30px;
     font-weight: 700;
     transition: all 500ms ease;
+    font-family: Helvetica;
 }
 
 .faq-one__accrodion .accrodion .accrodion-title h3::before {
@@ -5846,12 +5851,14 @@ color: var(--white-color) !important;
   font-size: 18px;
   color:gold;
   margin-bottom: 10px;
+  font-family: Helvetica;
 }
 
 .feature p {
   font-size: 14px;
   color: #555;
   line-height: 1.6;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* Mobile Responsive */
