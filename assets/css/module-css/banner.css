@@ -333,15 +333,16 @@
     height: 20px;
     margin: 15px 0px;
     background: transparent;
-    border: 1px solid var(--thm-white);
+    border: 1px solid var(--thm-primary);
     border-radius: 50%;
     opacity: 1;
     transition: all 200ms linear;
     transition-delay: 0.1s;
+    
 }
 
 #main-slider-one__pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-    background: transparent;
+    background: var(--thm-primary);
 }
 
 #main-slider-one__pagination .swiper-pagination-bullet::before {

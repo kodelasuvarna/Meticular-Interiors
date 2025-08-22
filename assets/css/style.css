@@ -323,13 +323,13 @@ h6 {
     align-items: center;
     overflow: hidden;
     padding-top: 10px;
-    padding-left: 45px;
-    padding-right: 45px;
-    padding-bottom: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 8px;
     background-color: transparent;
     color: var(--thm-white);
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 12px;
+    line-height: 30px;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.018em;
@@ -339,6 +339,7 @@ h6 {
     -o-transition: all 0.3s linear;
     transition: all 0.3s linear;
     z-index: 2;
+    border-radius: 5px;
 }
 
 .thm-btn:after {
@@ -1534,7 +1535,7 @@ Feauture Three
 .feauture-three {
     position: relative;
     display: block;
-    background: var(--thm-white);
+    background: var(--thm-black);
     padding: 120px 0px 80px;
     z-index: 1;
 }
@@ -1562,10 +1563,10 @@ Feauture Three
 }
 
 .feauture-three__img .inner img {
-    position: relative;
-    max-width: 100%;
-    float: right;
-    border-radius: 10px;
+    max-width: 80%;
+  height: auto;
+  margin: auto;
+  display: block;
     /* border: 1px solid var(--thm-black); */
 }
 
@@ -1576,7 +1577,7 @@ Feauture Three
 }
 
 .feauture-three__content .sec-title {
-    padding-bottom: 28px;
+    padding-bottom: 24px;
 }
 
 .feauture-three__content .text-box {
@@ -1595,6 +1596,20 @@ Feauture Three
 }
 
 
+.testimonial-img {
+  width: 60px;              /* Fixed small size */
+  height: 60px;             /* Equal height */
+  object-fit: cover;        /* Crop image nicely */
+  border-radius: 50%;       /* Make it circle */
+  border: 2px solid rgb(48, 42, 10);   /* Gold border */
+  background-color: var(--thm-primary);   /* Gold background behind image */
+             /* Small padding inside border */
+}
+.googlesreviews{
+    height:130px;
+    width:250px;
+}
+     
 /***
 =============================================
 Video One
@@ -1604,7 +1619,7 @@ Video One
     position: relative;
     display: block;
     padding: 250px 0px 0px;
-    background: #a68d4f;
+    background: var(--thm-black);
     z-index: 1;
 }
 
@@ -2008,7 +2023,7 @@ Faq One
 .faq-one__accrodion .accrodion .accrodion-content .inner {
     position: relative;
     display: block;
-    background-color: var(--thm-gray-bg);
+     background-color: #f5e6d3; 
     padding: 22px 30px 22px;
 }
 
@@ -2016,7 +2031,11 @@ Faq One
     margin: 0;
     color: var(--thm-black);
 }
-
+.blog-img {
+    height: 400px;       /* fixed height for all images */
+    object-fit: cover;   /* crop and fit nicely */
+    width: 100%;         /* take full card width */
+  }
 /*=============================
 	Project One CSS
 ===============================*/
@@ -5838,7 +5857,7 @@ color: var(--white-color) !important;
   border-radius: 8px;
   text-align: center;
   padding: 30px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.6);
   gap: 5px;
 }
 
@@ -5850,15 +5869,15 @@ color: var(--white-color) !important;
 
 .feature h3 {
   font-size: 18px;
-  color:gold;
+  color:var(--thm-primary);
   margin-bottom: 10px;
   font-family: Helvetica;
 }
 
 .feature p {
-  font-size: 14px;
+ 
   color: #555;
-  line-height: 1.6;
+  
   font-family: 'Poppins', sans-serif;
 }
 
@@ -5867,4 +5886,9 @@ color: var(--white-color) !important;
   .feature {
     flex: 1 1 100%;
   }
+}
+
+
+.list-unstyled li{
+    color:var(--thm-gray);
 }

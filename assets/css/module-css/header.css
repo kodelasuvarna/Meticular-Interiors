@@ -473,7 +473,7 @@
 
 .navbar-wrap>ul>li.active>a,
 .navbar-wrap>ul>li:hover>a {
-    color: var(--thm-primary);
+    color: var(--thm-black);
 }
 
 .main-menu .navigation li.menu-item-has-children .dropdown-btn {
@@ -606,8 +606,8 @@
 }
 
 .main-header-one__left .logo-box a img {
-    width: 120px;
-    padding:5px;
+    width: 130px;
+    /* padding:5px; */
 }
 
 .main-header-one__middle {
@@ -852,7 +852,7 @@
 .main-header-four__bottom {
     position: relative;
     display: block;
-    background-color:black;
+    background-color:goldenrod;
     
 }
 
