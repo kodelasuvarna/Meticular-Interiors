@@ -101,6 +101,7 @@
     z-index: 5;
 }
 
+
 .main-slider-one .swiper-slide-active .main-slider-one__content h3 {
     opacity: 1;
     -webkit-transform: translateX(0);
@@ -144,6 +145,7 @@
     transform: translateY(80px);
     z-index: 5;
 }
+
 
 .main-slider-one .swiper-slide-active .main-slider-one__content .btn-box {
     opacity: 1;
