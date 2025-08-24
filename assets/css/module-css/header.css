@@ -852,7 +852,7 @@
 .main-header-four__bottom {
     position: relative;
     display: block;
-    background-color:goldenrod;
+     background: linear-gradient(135deg, #d9b650 0%, #c5962a 45%, #a27615 100%);
     
 }
 
