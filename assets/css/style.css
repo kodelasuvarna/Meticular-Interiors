@@ -47,7 +47,7 @@
 :root {
     --thm-font: 'DM Sans', sans-serif;
     /* --thm-primary: #e90b35; */
-    --thm-primary: #DAA520;
+    --thm-primary:  #b8860b;
     --thm-primary-rgb: 233, 11, 53;
     --thm-white: #ffffff;
     --thm-white-rgb: 255, 255, 255;
@@ -5857,7 +5857,7 @@ color: var(--white-color) !important;
   border-radius: 8px;
   text-align: center;
   padding: 30px;
-  box-shadow: 0 4px 12px rgba(255, 215, 0, 0.6);
+  box-shadow: 0 4px 12px #a27615;
   gap: 5px;
 }
 
